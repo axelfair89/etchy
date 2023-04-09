@@ -7,7 +7,30 @@
   </head>
 
   <body>
-    <div class="container"></div>
+    <div class="flex-container">
+      <div class="title">
+        <div class="content">
+          <div class="board"></div>
+          <div class="buttons">
+            <button onclick="changeColor('black')">BLACK</button>
+            <button onclick="changeColor('grey')">GREY</button>
+            <button onclick="changeColor('white')">ERASER</button>
+            <button>RANDOM</button>
+            <button>RESET</button>
+          </div>
+          <div>
+            <input
+              type="text"
+              placeholder="Size of board"
+              class="text"
+              value="16"
+              onchange="changeSize(this.value)"
+            />
+            <button>Set Size</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
